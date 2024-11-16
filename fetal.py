@@ -20,6 +20,7 @@ st.title('Fetal Health Classification: A Machine Learning App')
 # Display an image and description
 st.image('fetal_health_image.gif', width = 400)
 st.write("Utilize our advanced Machine Learning application to predict fetal health classification")
+st.write("Please upload a .csv file on the sidebar with the specification shown in the example")
 
 # Load the pre-trained model from the pickle files
 dt_pickle = open('dt_fetus.pickle', 'rb') #read bytes, we aren't trying to write them
