@@ -39,6 +39,7 @@ fetal_sv = pickle.load(sv_pickle)
 sv_pickle.close()
 
 default_df = pd.read_csv('fetal_health.csv')
+default_df = default_df.drop('fetal_health', axis=1)
 
 st.sidebar.header('Fetal Health Features Input')
 user_csv = st.sidebar.file_uploader('')
